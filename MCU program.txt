@@ -1,0 +1,44 @@
+from gpio import *
+from time import *
+from physical import *
+from realhttp import *
+
+# MCU is used here because SBC didnot have an analog input pin to connect the temperature sensor
+def path(path):
+	return "http://192.168.25.1:80" + path
+
+def onHTTPDone(status, data):
+	print("status: " + str(status))
+	print("data: " + data)
+	
+def main():
+	http = RealHTTPClient()
+	http.onDone(onHTTPDone)
+	http.postWithHeader(path("/data/file.dat"), "posted data", {"Connection":"close"})
+	http.getWithHeader(path("/contacts/abilyk"), {"Connection":"close"})
+	http.getWithHeader(path("/services/add_numbers"), {"Connection":"close"})
+	http.getWithHeader(path("/hello.txt"), {"Connection":"close"})
+	http.getWithHeader(path("/dummy.png"), {"Connection":"close"})
+	http.getWithHeader(path("/dir/"), {"Connection":"close"})
+	pinMode(A0, IN)
+	pinMode(1, OUT)
+	pinMode(2, IN)
+	
+
+	while True:
+		ainput = analogRead(A0)  # read temperature
+		dinput = digitalRead(2)  # read motion
+		digitalWrite(1, LOW)     #alarm goes OFF if temperature drops below 25C
+		if ainput < 638:         #Temperature value on scale of 0 to 1023 equivalent to > 25C
+			digitalWrite(1, LOW)
+		else: 
+			digitalWrite(1, HIGH)
+		#print ainput
+		#print dinput
+	
+		delay(3600)
+		
+if __name__ == "__main__":
+   main()
+   
+	

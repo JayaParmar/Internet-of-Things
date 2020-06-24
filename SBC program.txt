@@ -1,0 +1,53 @@
+from time import *
+from gpio import *
+from realhttp import *
+
+def get_contacts( context, request, reply ):
+	print(  "gc: " + request.url() + " @ " + request.ip() )
+	reply.setContent("contacts...")
+	reply.setStatus(200)
+	reply.end()
+		
+def post_data( context, request, reply ):
+	print(  "pd: " + request.url() + " @ " + request.ip() )
+	reply.setContent("posted data ...")
+	reply.setStatus(200)
+	reply.end()
+	
+def get_services( context, request, reply ):
+	print(  "rs: " + request.url() + " @ " + request.ip() )
+	reply.setContent("services...")
+	reply.setStatus(200)
+	reply.end()
+	
+def default_posts( context, request, reply ):
+	print(  "dp: " + request.url() + " @ " + request.ip() )
+	reply.setContent("posted content ignored...")
+	reply.setStatus(200)
+	reply.end()
+	
+def default_gets( context, request, reply ):
+	print(  "dg: " + request.url() + " @ " + request.ip() )
+	url = request.url()
+	if '/' in url and '.' in url:
+		reply.sendFile(url)			
+	else:
+		reply.sendNotFound();
+
+def main():
+	pinMode(0, OUT) #digital pin for Siren
+	pinMode(1, OUT) #digital pin for Ceiling Fan
+	server = RealHTTPServer()
+	print( "Server started: %s"%( server.start(80) ) )
+	print( "Server listening: %s"%( server.isListening() ) )
+	server.route("/contacts/*", ["GET"], get_contacts)
+	server.route("/services/*", ["GET"], get_services)
+	server.route("/data/*", ["POST"], post_data)
+	server.route("*", ["POST"], default_posts)
+	server.route("*", ["GET"], default_gets)
+
+	while True:
+		delay(3600)
+
+if __name__ == "__main__":
+	main()

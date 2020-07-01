@@ -3,7 +3,9 @@
 *For the product purchase details, please see “Bill of Materials” spreadsheet*
 
 **Networking Hub**
-https://github.com/JayaParmar/Internet-of-Things/blob/master/images/F1_Networking%20Hub.jpg
+
+![](/images/F1_Networking%20Hub.jpg)
+
 
 Ubiquiti Unifi products are chosen for networking since I found them modular and scalable which is a good option for future expansion.
 

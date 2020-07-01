@@ -1,5 +1,9 @@
 *For the product purchase details, please see “Bill of Materials” spreadsheet* here https://github.com/JayaParmar/Internet-of-Things/blob/master/images/Bill%20of%20materials.xlsx
 
+**Floor Plan**
+
+![](/images/Floor%20plan.jpg)
+
 **Networking Hub**
 
 ![](/images/F1_Networking%20Hub.jpg)

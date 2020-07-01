@@ -1,8 +1,4 @@
-*Read this document in line with the ‘diagram’ for each room. *
-
-*For the product purchase details, please see “Bill of Materials” spreadsheet*
-
-![](/images/Bill%20of%20materials.xlsx)
+*For the product purchase details, please see “Bill of Materials” spreadsheet* here https://github.com/JayaParmar/Internet-of-Things/blob/master/images/Bill%20of%20materials.xlsx
 
 **Networking Hub**
 
@@ -338,3 +334,5 @@ GDPR issues have been filed reporting the breach of privacy data by the voice as
 [<span class="underline">https://techcrunch.com/2019/08/02/google-ordered-to-halt-human-review-of-voice-ai-recordings-over-privacy-risks/</span>](https://techcrunch.com/2019/08/02/google-ordered-to-halt-human-review-of-voice-ai-recordings-over-privacy-risks/)
 
 Overall, the house has networking for device scalability in future. Also, the networking hub being modular provides network scalability, if needed.
+
+

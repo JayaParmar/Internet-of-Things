@@ -2,6 +2,8 @@
 
 *For the product purchase details, please see “Bill of Materials” spreadsheet*
 
+![](/images/Bill%20of%20materials.xlsx)
+
 **Networking Hub**
 
 ![](/images/F1_Networking%20Hub.jpg)
@@ -56,6 +58,8 @@ Read below link to datasheet for further details
 With these three devices, we have the basic communication network setup to make our house a smart home. Later, we will provide an AC in wall unit on each floor (2,3 and 4) to provide ethernet and WiFi connection with basic PoE connection. Floor 1 will use the outdoor WiFi unit.
 
 **Garage & Outdoor**
+
+![](/images/F1_Garage%20%26%20Outdoor%20Area.jpg)
 
 Devices here have wireless connectivity to gateway because outdoor has security issues.
 
@@ -123,6 +127,8 @@ Specification details
 
 **Kitchen**
 
+![](/images/F2_Kitchen.jpg)
+
 The network connectivity for floor 2 is provided by AC in wall unit installed in the kitchen (directly above the networking hub).
 
 1.  > In-wall Unit (Floor 2 connectivity)
@@ -170,6 +176,8 @@ Specification Source:
 We buy one pair of WiFi enabled interconnected smoke alarm to detect accidental smoke from the kitchen area. Alarm is kept at a reasonable distance to avoid false alarm trigger from cooking. The detector can be interconnected upto 12 units via WiFi for future scalability. On Blac Friday discount we got 2 units at a price of 1. We install one of them on Floor 2 and the other one can be used on Floor 3 but right now we keep it as a spare.
 
 **Living Room**
+
+![](/images/F2_Living%20Room.jpg)
 
 1.  > Door Bell
 
@@ -225,6 +233,8 @@ We have a light with motion detector which turns on when someone climbs the stai
 
 **Master Bedroom**
 
+![](/images/F3_Master%20Bedroom.jpg)
+
 1.  > In-wall Unit (Floor 2 connectivity)
 
 > This unit is placed towards the master bedroom near the toilet wall. We assume that all indoor walls are softwalls and only outdoor walls are hardwalls. Thus the positioning of the in-wall unit will be close to the center of the floor.
@@ -259,6 +269,8 @@ Other smart devices used in this room are already described above. For more deta
 
 **Kids Bedroom**
 
+![](/images/F3_Kids%20Bedroom.jpg)
+
 This room has two lights and a temperature sensor. The smart devices are similar to ones in the master bedroom. Read the ‘Bill of Materials’ for more details.
 
 **Toilet + Bathroom**
@@ -273,13 +285,19 @@ Again, we have a light with motion detector which turns on when someone climbs t
 
 **Guest Bedroom**
 
+![](/images/F4_Guest%20Bedroom.jpg)
+
 This room houses the last in-wall unit i.e. for floor 4. Like other bedrooms it has a ceiling light and a temperature controller. Details of the products can be found in the Bill of Materials.
 
 **Study**
 
+![](/images/F4_Study.jpg)
+
 This is a room with three light sources and a temperature controller. Computers, music system or any other recreation devices can be connected in this room based on the mood. Connectivity both ethernet and wireless is available from Ubiquiti in-wall unit. Production details found in Bill of Materials.
 
 **Balcony**
+
+![](/images/F4_Balcony.jpg)
 
 The balcony door at Floor 4 is one more entrance to the house. Since the family does not spend most time on this floor, we plan to install a security system here. Smart devices needed would be a security camera, a motion sensor, a door open sensor, a siren and connectivity to the smartphone.
 
